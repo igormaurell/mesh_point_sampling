@@ -49,7 +49,7 @@
 #include <pcl/console/print.h>
 #include <pcl/console/parse.h>
 #include <fstream>
-#include "point_types.h"
+#include "point_types/point_types.h"
 
 inline double
 uniform_deviate (int seed)

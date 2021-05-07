@@ -9,5 +9,5 @@ include_directories(include)
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-add_executable (mesh_point_sampling mesh_point_sampling.cpp include/point_types.h)
+add_executable (mesh_point_sampling mesh_point_sampling.cpp include/point_types/point_types.h)
 target_link_libraries (mesh_point_sampling ${PCL_LIBRARIES})
