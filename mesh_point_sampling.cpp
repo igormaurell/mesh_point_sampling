@@ -289,7 +289,7 @@ main (int argc, char **argv)
     pcl::PointCloud<PointXYZRGBNormalFace>::Ptr cloud_out (new pcl::PointCloud<PointXYZRGBNormalFace>);
     pcl::copyPointCloud (*cloud_1, *cloud_out);
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
-        cloud_out->points[i].face = point_face_corr[i];
+        cloud_out->points[i].label = point_face_corr[i];
     }
     savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
   }
@@ -298,7 +298,7 @@ main (int argc, char **argv)
     pcl::PointCloud<PointNormalFace>::Ptr cloud_out (new pcl::PointCloud<PointNormalFace>);
     pcl::copyPointCloud (*cloud_1, *cloud_out);
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
-        cloud_out->points[i].face = point_face_corr[i];
+        cloud_out->points[i].label = point_face_corr[i];
     }
     savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
   }
@@ -307,7 +307,7 @@ main (int argc, char **argv)
     pcl::PointCloud<PointXYZRGBFace>::Ptr cloud_out (new pcl::PointCloud<PointXYZRGBFace>);
     pcl::copyPointCloud (*cloud_1, *cloud_out);
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
-        cloud_out->points[i].face = point_face_corr[i];
+        cloud_out->points[i].label = point_face_corr[i];
     }
     savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
   }
@@ -316,7 +316,7 @@ main (int argc, char **argv)
     pcl::PointCloud<PointXYZFace>::Ptr cloud_out (new pcl::PointCloud<PointXYZFace>);
     pcl::copyPointCloud (*cloud_1, *cloud_out);
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
-        cloud_out->points[i].face = point_face_corr[i];
+        cloud_out->points[i].label = point_face_corr[i];
     }
     savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
   }
