@@ -291,7 +291,7 @@ main (int argc, char **argv)
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
         cloud_out->points[i].label = point_face_corr[i];
     }
-    savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
+    savePCDFileBinary (argv[pcd_file_indices[0]], *cloud_out);
   }
   else if (write_normals)
   {
@@ -300,7 +300,7 @@ main (int argc, char **argv)
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
         cloud_out->points[i].label = point_face_corr[i];
     }
-    savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
+    savePCDFileBinary (argv[pcd_file_indices[0]], *cloud_out);
   }
   else if (write_colors)
   {
@@ -309,7 +309,7 @@ main (int argc, char **argv)
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
         cloud_out->points[i].label = point_face_corr[i];
     }
-    savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
+    savePCDFileBinary (argv[pcd_file_indices[0]], *cloud_out);
   }
   else
   {
@@ -318,7 +318,7 @@ main (int argc, char **argv)
     for(int i = 0; i < SAMPLE_POINTS_; i++) {
         cloud_out->points[i].label = point_face_corr[i];
     }
-    savePCDFileASCII (argv[pcd_file_indices[0]], *cloud_out);
+    savePCDFileBinary (argv[pcd_file_indices[0]], *cloud_out);
   }
 
 }
