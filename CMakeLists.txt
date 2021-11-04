@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
+set(CMAKE_INSTALL_PREFIX /usr/bin)
+
 project(mesh_point_sampling)
 
 find_package(PCL 1.10 REQUIRED)
@@ -11,3 +13,6 @@ add_definitions(${PCL_DEFINITIONS})
 
 add_executable (mesh_point_sampling mesh_point_sampling.cpp include/point_types/point_types.h)
 target_link_libraries (mesh_point_sampling ${PCL_LIBRARIES})
+install(TARGETS mesh_point_sampling
+    DESTINATION ${CMAKE_INSTALL_PREFIX}
+    )
