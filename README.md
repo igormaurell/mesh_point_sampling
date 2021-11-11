@@ -15,8 +15,9 @@ After install PCL-1.10, do:
     $ mkdir build && cd build
     $ cmake ..
     $ make
+    $ sudo make install
 
 ## Using
 After install, use the help to understand the parameters, doing:
     
-    $ ./mesh_point_sampling -h
+    $ mesh_point_sampling -h
